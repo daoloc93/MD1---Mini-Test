@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Nhập vào số năm:</h3>
+<input type="text" id="year">
+<button onclick="convertToCentury()">Tính thế kỷ</button>
+<h3 id="result"></h3>
+<script>
+    function convertToCentury(){
+        let year = parseInt(document.getElementById("year").value);
+        let century = parseInt(year/100 + 1);
+        document.getElementById("result").innerHTML = "Năm " + year + " thuộc thế kỷ " + century;
+    }
+</script>
+</body>
+</html>

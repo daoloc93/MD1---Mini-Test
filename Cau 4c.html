@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tính tổng các số từ a đến b (a < b):</h2>
+<h3>Nhập vào a:</h3>
+<input type="text" id="a">
+<h3>Nhập vào b:</h3>
+<input type="text" id="b">
+<br><br>
+<button onclick="square()">Tính</button>
+<h3 id="result"></h3>
+
+<script>
+
+    function square() {
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let sum = 0;
+        while (a <= b) {
+            sum += a;
+            a++;
+            if (a > b+a) {break};
+            document.getElementById("result").innerHTML = "Tông = " + sum;
+        }
+
+    }
+
+</script>
+</body>
+</html>

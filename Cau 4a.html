@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Nhập độ dài 1 cạnh (m) để tính chu vi và diện tích hình vuông:</h3>
+<input type="text" id = "a">
+<button onclick="calculate()">Tính</button>
+<p id = "result"></p>
+<script>
+    function calculate() {
+        let a = +document.getElementById("a").value;
+        let S = a * a;
+        let P = a * 4;
+        document.getElementById("result").innerHTML = ("Diện tích = " + S + " m<sup>2</sup>" +
+            "</br>" + "Chu vi = " + P + " m");
+    }
+</script>
+</body>
+</html>
